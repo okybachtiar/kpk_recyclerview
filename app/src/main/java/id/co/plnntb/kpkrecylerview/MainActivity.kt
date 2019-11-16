@@ -85,5 +85,4 @@ class MainActivity : AppCompatActivity() {
         adapterPlg.notifyDataSetChanged()
     }
 
-
 }
