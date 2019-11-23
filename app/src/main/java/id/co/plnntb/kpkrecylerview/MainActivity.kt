@@ -1,5 +1,6 @@
 package id.co.plnntb.kpkrecylerview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         rv.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = adapterPlg
+        }
+        cameraBtn.setOnClickListener{
+            val cameraIntent = Intent (this,CameraActivity::class.java)
+            startActivity(cameraIntent)
         }
     }
 
