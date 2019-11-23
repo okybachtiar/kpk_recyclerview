@@ -3,6 +3,7 @@ package id.co.plnntb.kpkrecylerview
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.recyclerview.widget.LinearLayoutManager
 import id.co.plnntb.kpkrecylerview.adapter.PelangganAdapter
 import id.co.plnntb.kpkrecylerview.model.Pelanggan
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             adapter = adapterPlg
         }
         cameraBtn.setOnClickListener{
-            val cameraIntent = Intent (this,CameraActivity::class.java)
+            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivity(cameraIntent)
         }
     }
