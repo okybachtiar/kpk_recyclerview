@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivity(cameraIntent)
         }
+
     }
 
     fun initTampilan() {
